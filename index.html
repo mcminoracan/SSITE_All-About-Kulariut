@@ -21,19 +21,18 @@ header{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-c
 <header class="wrap"><div class="brand">ICS - Aliala ning Kulariut</div><div class="tag">A small cultural learning experience</div></header>
 <main class="wrap">
 <section class="hero"><div><div class="eyebrow">Local folklore · Interactive cards</div><h1>Meet the<br><span style="color:var(--moss)">Kulariut.</span></h1><p>A mysterious figure described in local stories. Explore six short prompts about its appearance, setting, and the importance of preserving oral traditions.</p></div>
-<div class="hero-art"><img src="Images/Kulariut_01.png" alt="Kulariut folklore artwork at night" onerror="this.style.display='none'"><div class="art-label">Stories live in the places we remember</div></div></section>
+<div class="hero-art"><img src="Kulariut_01.png" alt="Kulariut folklore artwork at night" onerror="this.style.display='none'"><div class="art-label">Stories live in the places we remember</div></div></section>
 <section><div class="section-head"><div><div class="eyebrow">Tap a card to learn</div><h2>Six things to explore</h2></div><p>Choose a topic to reveal a simple question, then reveal the answer. Images automatically adapt to different screen sizes.</p></div><div class="grid" id="cards"></div></section>
 </main>
 <footer class="wrap"><span>Habigkis · Kulariut folklore cards</span><span>Learning resource · Respecting oral tradition</span></footer>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog"><button class="close" id="close" aria-label="Close card">×</button><div class="eyebrow" id="topic"></div><h2 id="modalTitle"></h2><div class="dialog-image"><img id="modalImage" src="" alt=""></div><div class="question" id="question"></div><div class="answer" id="answer"></div><div class="actions"><button class="action" id="reveal">Reveal answer</button><button class="action secondary" id="next">Next card →</button></div><div class="progress" id="progress"></div></div></div>
+
 <script>
-// Put your own artwork in an "images" folder beside this HTML file.
-// Use the filenames below, or change the image paths in this array.
-// Recommended: JPG/WebP. CSS object-fit:cover keeps images undistorted while cropping responsively.
+
 const cards=[
-{title:"Appearance",image:"Images/Kulariut_02.png",summary:"Remember the features described in local accounts.",question:"How is the Kulariut described in the version shared with Habigkis?",answer:"The description shared so far is of an old creature with a long white beard."},
-{title:"Habitat",image:"Images/Kulariut_03.png",summary:"Explore the places associated with the story.",question:"What places is the Kulariut associated with?",answer:"The description shared so far connects it with mangrove areas and bamboo groves."},
-{title:"The Night Watcher",image:"Images/Kulariut_04.png",summary:"Learn about its mysterious nighttime presence.",question:"What is the Kulariut said to do at night?",answer:"In the version shared with us, it is said to observe family homes at night. This is presented as folklore, not a verified event."},
+{title:"Appearance",image:"Kulariut_02.png",summary:"Remember the features described in local accounts.",question:"How is the Kulariut described in the version shared with Habigkis?",answer:"The description shared so far is of an old creature with a long white beard."},
+{title:"Habitat",image:"Kulariut_03.png",summary:"Explore the places associated with the story.",question:"What places is the Kulariut associated with?",answer:"The description shared so far connects it with mangrove areas and bamboo groves."},
+{title:"The Night Watcher",image:"Kulariut_04.png",summary:"Learn about its mysterious nighttime presence.",question:"What is the Kulariut said to do at night?",answer:"In the version shared with us, it is said to observe family homes at night. This is presented as folklore, not a verified event."},
 //{title:"Local Roots",image:"images/kulariut-roots.jpg",summary:"Connect the story to its community.",question:"Who can help verify the local version of the Kulariut story?",answer:"Habigkis members, local elders, and community storytellers can help confirm the details and how the story is remembered."},
 //{title:"Oral Tradition",image:"images/kulariut-storytelling.jpg",summary:"Think about how stories are passed on.",question:"Why should we listen to local storytellers?",answer:"They can share context and versions that may not appear online. Recording their accounts respectfully helps preserve community knowledge."},
 //{title:"Respectful Learning",image:"images/kulariut-heritage.jpg",summary:"Consider how to share cultural stories.",question:"How can we present folklore respectfully?",answer:"Credit sources where possible, acknowledge that versions differ, and check details with knowledgeable local people before publishing."}
