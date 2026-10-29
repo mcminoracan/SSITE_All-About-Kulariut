@@ -20,11 +20,11 @@ header{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-c
 <body>
 <header class="wrap"><div class="brand">ICS - Aliala ning Kulariut</div><div class="tag">A small cultural learning experience</div></header>
 <main class="wrap">
-<section class="hero"><div><div class="eyebrow">Local folklore · Interactive cards</div><h1>Meet the<br><span style="color:var(--moss)">Kulariut.</span></h1><p>A mysterious figure described in local stories. Explore six short prompts about its appearance, setting, and the importance of preserving oral traditions.</p></div>
+<section class="hero"><div><div class="eyebrow">Local folklore · Interactive cards</div><h1>Meet the<br><span style="color:var(--moss)">Kulariut.</span></h1><p>Kulariut is a mysterious creature in local folklore, often described as an old man with a long white beard who watches over homes at night, living near mangroves and bamboo groves.</p></div>
 <div class="hero-art"><img src="Kulariut_01.png" alt="Kulariut folklore artwork at night" onerror="this.style.display='none'"><div class="art-label">Stories live in the places we remember</div></div></section>
-<section><div class="section-head"><div><div class="eyebrow">Tap a card to learn</div><h2>Six things to explore</h2></div><p>Choose a topic to reveal a simple question, then reveal the answer. Images automatically adapt to different screen sizes.</p></div><div class="grid" id="cards"></div></section>
+<section><div class="section-head"><div><div class="eyebrow">Tap a card to learn</div><h2>Learn more about kulariut</h2></div></div><div class="grid" id="cards"></div></section>
 </main>
-<footer class="wrap"><span>Habigkis · Kulariut folklore cards</span><span>Learning resource · Respecting oral tradition</span></footer>
+<footer class="wrap"><span>ICS-SSITE</span><span>Aliala ning Kulariut</span></footer>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog"><button class="close" id="close" aria-label="Close card">×</button><div class="eyebrow" id="topic"></div><h2 id="modalTitle"></h2><div class="dialog-image"><img id="modalImage" src="" alt=""></div><div class="question" id="question"></div><div class="answer" id="answer"></div><div class="actions"><button class="action" id="reveal">Reveal answer</button><button class="action secondary" id="next">Next card →</button></div><div class="progress" id="progress"></div></div></div>
 
 <script>
